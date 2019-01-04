@@ -46,16 +46,16 @@ ui <- fluidPage(
                 sliderInput("start_Z", label = "Initial Z:",
                             min = -100, max = 100, value = 1, step=0.001),
                 sliderInput("time", label = "Duration:",
-                            min = 1, max = 100, value = c(1,100), step=0.001)
+                            min = 1, max = 200, value = c(1,100), step=0.001)
             
         ),
 
         # Tabs containing plots and information
         mainPanel(
             tabsetPanel(
-                tabPanel("3D Interactive",rglwidgetOutput("attractor",width="100%")),
                 tabPanel("2D Plots",plotOutput("plots_2d")),
                 tabPanel("2D Time Series",plotOutput("time_series")),
+                tabPanel("3D Interactive",rglwidgetOutput("attractor",width="100%")),
                 tabPanel("Information",withMathJax(includeHTML("lorenz_text_snippet.html")))
             )
         )
@@ -90,7 +90,8 @@ server <- function(input, output) {
         #Set up a legend using the viridis colour table
         timerange<-max(out$time)-min(out$time)
         legendlist<-seq(min(out$time),max(out$time),timerange/10)
-        legend3d("left",legend=legendlist,fill=viridis(10),title="time")
+        #The legend looks super ugly, so it's hidden
+        #legend3d("left",legend=legendlist,fill=viridis(10),title="time",cex = 0.5)
         
         rglwidget()
     })
