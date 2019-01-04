@@ -5,8 +5,8 @@ account: bobturner
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 624787
-bundleId: 1796415
+bundleId: 1796426
 url: https://bobturner.shinyapps.io/lorenz/
-when: 1546598219.18546
+when: 1546598855.82084
 asMultiple: FALSE
 asStatic: FALSE
