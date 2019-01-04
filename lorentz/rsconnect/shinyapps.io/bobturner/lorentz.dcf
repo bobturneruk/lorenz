@@ -1,0 +1,12 @@
+name: lorentz
+title: lorentz
+username:
+account: bobturner
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 624784
+bundleId: 1789698
+url: https://bobturner.shinyapps.io/lorentz/
+when: 1546187541.32768
+asMultiple: FALSE
+asStatic: FALSE

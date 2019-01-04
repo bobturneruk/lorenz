@@ -1,0 +1,12 @@
+name: lorenz
+title: lorenz
+username:
+account: bobturner
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 624787
+bundleId: 1789703
+url: https://bobturner.shinyapps.io/lorenz/
+when: 1546188026.11603
+asMultiple: FALSE
+asStatic: FALSE
